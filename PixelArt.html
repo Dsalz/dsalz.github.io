@@ -14,7 +14,7 @@
     
 <body>
     <div class="container">
-        <h1 class="header">Pixel Art</h1> <hr/>
+        <h1 class="header">Pixel Art</h1> <hr class="header-line"/>
         <h2 >Choose your Grid size</h2>
         <p>Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="20" max = "40"><br>
@@ -23,12 +23,14 @@
         <h2 >Pick A Color</h2>
         <input type="color" id="colorPicker"><br>
         <button type ="submit" id="specs-submit" class="btn btn-info" style="text-transform: capitalize; margin: 20px; font-size: 20px">Create New Grid</button>  
-        <button type="submit" value ="Draw" id= "grid-draw" class="btn btn-info btn-clicked" style="text-transform: capitalize; margin: 20px; font-size: 20px">Draw</button>
-        <button type="submit" value ="Erase" id="grid-erase" class="btn btn-info" style="text-transform: capitalize; margin: 20px; font-size: 20px">Erase</button>
-        <button type="submit" value ="Clear" id="grid-delete" class="btn btn-info" style="text-transform: capitalize; margin: 20px; font-size: 20px">Clear</button>
+        <br>
+        <button type="submit" value ="Draw" id= "grid-draw" class="btn btn-info btn-clicked" style="text-transform: capitalize; margin: 8px; font-size: 20px">Draw</button>
+        <button type="submit" value ="Erase" id="grid-erase" class="btn btn-info" style="text-transform: capitalize; margin: 8px; font-size: 20px">Erase</button>
+        <button type="submit" value ="Clear" id="grid-delete" class="btn btn-info" style="text-transform: capitalize; margin: 8px; font-size: 20px">Clear</button>
         <br> 
 
     <h1>Canvas</h1>
+    <hr class="canvas-line">
         <div class="canvas"></div>
    </div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
