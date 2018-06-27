@@ -39,6 +39,19 @@ p {
     margin: 0;
 }
 
+.canvas-header {
+    font-size: 50px;
+    margin-top:40px;   
+}
+
+.canvas-line{
+    border: none;
+    height: 2px;
+    background-color: linear-gradient(135deg, #5fc3e4 0%, #e55d87 100%);
+    width: 120px;
+    margin-top: -10px;
+}
+
 #pixelCanvas {
     background: white;
     margin-bottom:90px;
@@ -72,6 +85,14 @@ input[type=number] {
 }
 
 h1.header {
-    font-size:60px;
+    font-size:70px;
+}
+
+hr.header-line {
+    margin-top: -5px;
+    width: 400px;
+    height: 2px;
+    border: none;
+    background: linear-gradient(135deg, #5fc3e4 0%, #e55d87 100%);
 }
 
