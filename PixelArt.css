@@ -47,7 +47,7 @@ p {
 .canvas-line{
     border: none;
     height: 2px;
-    background-color: linear-gradient(135deg, #5fc3e4 0%, #e55d87 100%);
+    background: linear-gradient(135deg, #5fc3e4 0%, #e55d87 100%);
     width: 120px;
     margin-top: -10px;
 }
