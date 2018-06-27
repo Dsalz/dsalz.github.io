@@ -9,9 +9,6 @@ var Width = $("#inputWidth");    //store the input selectors for future referenc
 var Height = $("#inputHeight");
 var Color = $("#colorPicker");
 
-
-makeGrid();  //calling the makeGrid function when the page is loaded
-
 function ChangeGridColor(color){    //Function for changing td color when clicked created to reduce repetitive codes and implement "DRY"
   $('td').click(function(){
     $(this).css("background-color", color);
