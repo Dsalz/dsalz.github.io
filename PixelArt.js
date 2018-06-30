@@ -28,12 +28,6 @@ function makeGrid() {    //function called to make grid
   var color = Color.val();
   
   $(".canvas").append("<table id='pixelCanvas'></table>");   //adding an empty table to the page
-   
-  var canvasWidth = (width * 20) + " px";     //calculating the height and width of the new table (for the white background color)
-  var canvasHeight = (height * 20) + " px";
-
-  $("#pixelCanvas").css("width" , canvasWidth);   //assign calculated values to the table
-  $("#pixelCanvas").css("height" , canvasHeight);
   
     for(var x =0 ; x<height ; x++){    //looping with the given values to dynamically create the rows (each with a class of the index)
 $("#pixelCanvas").append("<tr class ='" + x + "'</tr>"); // nested looping to add the number of columns inputted by the user to the table row using the index class assigned to each row
@@ -66,7 +60,7 @@ $("#specs-submit").click(function (){   //event handler when submit button is cl
 $("#grid-delete").click(function(){    //event handler when clear button is clicked
   $('.btn').removeClass("btn-clicked");  // removing btn-clicked class from all buttons
   $("#grid-draw").addClass('btn-clicked'); //adding btn-clicked class to draw button to tell the user that they can draw now
-  $('td').css("background-color", "white"); // wiping canvas clean by changing the color of all the elements to white
+  $('td').css("background-color", "transparent"); // wiping canvas clean by changing the color of all the elements to transparent
   var color = Color.val(); 
   ChangeGridColor(color); // getting color in the color picker and assigning the td to it when clicked
 })
@@ -82,7 +76,7 @@ $("#grid-draw").click(function () {   //event handler when draw button is clicke
 $("#grid-erase").click(function () {    //event handler when erase button is clicked
 $(this).addClass('btn-clicked'); //adding btn-clicked class to the erase button to remind the user that they are currently erasing
 $('#grid-draw').removeClass('btn-clicked') // removing btn-clicked class from the draw button
- ChangeGridColor("white");   // assigning the td background color to white when clicked thereby removing any color there previously
+ ChangeGridColor("transparent");   // assigning the td background color to transparent when clicked thereby removing any color there previously
 })
 
 
