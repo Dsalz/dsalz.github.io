@@ -1,0 +1,537 @@
+@grey-hex: #89898E;
+
+@gold-hex: #c5b358;
+
+@mach1-color: linear-gradient(120deg,#EE9CA7,#FFDDE1);
+  
+@mach2-color:linear-gradient(120deg,#2193B0,#00FFFF);
+
+@mach3-color: linear-gradient(120deg,#F12711,#F5AF19);
+
+@mach4-color: linear-gradient(120deg,#B92B27,#1565C0);
+
+
+body {
+  text-align: center;
+  background : linear-gradient(120deg, #454343, #000000 );
+  margin: 0;
+  font-family: 'Allan', cursive;
+  letter-spacing: 1px;
+  
+  .landing {
+    height: 800px;
+  
+  h1 {
+    color: white;
+    padding: 250px 50px 0px 50px;
+    font-size: 7vw;
+    font-weight:700;
+  }
+  
+  h3{
+    color: white;
+    margin: -4vw 5vw 4vw;
+    font-size: 3vw;
+    display:none;
+  }
+  
+  p{
+    color: @gold-hex;
+    margin: -2vw 5vw 4vw;
+    font-size: 2vw;
+    display: none;
+  }
+}
+}
+
+nav.navbar {
+  color: @gold-hex;
+  width: 100vw;
+  font-size: 1.5vw;
+  
+  a.logo{
+    float: left;
+    margin-left: 5vw;
+    text-decoration:none;
+    color:@gold-hex;
+    cursor:pointer !important;
+      
+      img{
+    width:50px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+      }
+  }
+  
+  div.pagenavs{
+      float: right;
+    
+    a{
+    margin-right: 4vw;
+    text-decoration:none;
+    color:@gold-hex;
+    padding-bottom:12.5px;
+    cursor:pointer;
+      
+      &:hover{
+        border-bottom:1.5px solid @gold-hex;
+      }
+      
+    }
+    
+    a.Resume-download {
+      border:1px solid @gold-hex;
+      border-radius: 5px;
+      color: @gold-hex;
+      padding: 5px;
+      cursor:pointer;
+      
+      &:hover {
+        // border:1px solid white;
+        color: white;
+      }
+    }
+  }
+  
+}
+
+//  div.pagenavs  a.active{
+//      border-bottom:1.5px solid @gold-hex;
+//      padding-bottom:12.5px;
+// }
+
+nav.inlanding{
+  background-color: transparent;
+  top:50px;
+  z-index:999;
+  position:fixed;
+  padding: 0;
+}
+
+nav.left-landing{
+  background-color: black;
+  position: fixed;
+  top:0px;
+  padding: 15px 0px;
+}
+
+.about {
+  padding-bottom: 5vw;
+  background:linear-gradient(45deg, #F22B5F, #B12F2F);
+  h2{
+    font-size: 2.8vw;
+    color: white;
+     padding-top: 7vw;
+    
+  }
+  
+  div.origin-card {
+    background-color: white;
+    padding: 1vw;
+    border: 1px solid white;
+    margin: 10vw 10vw 25vw;
+    box-shadow: -1px 5px 39px 2px rgba(0,0,0,.5);
+    
+    p {
+      color:black;
+      font-size: 2vw;
+    }
+  }
+}
+
+div.portfolio {
+  background-color: white;
+  margin-top: -5vw;
+  padding-bottom: 5vw;
+  
+  h2 {
+    color:black;
+    font-size: 2.8vw;
+    padding: 10vw 20vw 2vw;
+  } 
+  
+  a.portfolio-link {
+    text-decoration:none;
+    height: 30vw;
+    width:100%;
+    background:transparent;
+    
+  }
+  
+  
+  
+  div.portfolio-item {
+    display:flex;
+    width: 60vw;
+    margin: 5vw 20vw 5vw;
+    border-radius: 10px;
+      &:hover {
+    box-shadow: 2px 3px 39px 2px rgba(0,0,0,.5);
+    }
+    
+    div.portfolio-description {
+    width: 35%;
+    padding: 10px;
+    color: black;
+    height: inherit;
+      border-radius: 10px 0px 0px 10px;
+      
+      h3.portfolio-header {
+        font-size:2.5vw;
+        margin-bottom: -5px;
+      }
+      
+      hr.portfolio-header-line {
+        border: none;
+        height: 0.3vw;
+        background-color: white;
+      }
+      
+      p {
+        font-size:2vw;
+      }
+    }
+    
+    div.portfolio-screenshot {
+      width: 65%;
+      min-height:300px;
+      max-height: 300px;
+    }
+    
+  }
+ 
+  .Mach-1 {
+    background: @mach1-color;
+    hr.portfolio-header-line {
+      width: 10vw;
+    }
+  }
+   .Mach-2 {
+    background: @mach2-color;
+      hr.portfolio-header-line {
+      width: 10vw;
+    }
+  }
+   .Mach-3 {
+    background: @mach3-color;
+      hr.portfolio-header-line {
+      width: 10vw;
+    }
+  }
+   .Mach-4 {
+    background: @mach4-color;
+      hr.portfolio-header-line {
+      width: 10vw;
+    }
+  }
+  
+}
+
+div.certifications {
+   background-color: #f0f8ff;
+  margin-top: -5vw;
+  padding-bottom: 7vw;
+  
+  h3 {
+    font-size: 2.8vw;
+    padding-top: 7vw;
+  }
+  
+  div.certification-item {
+    padding-top: 80px;
+    border: 0.6vw black solid;
+    background: transparent;
+    width: 50vw;
+    height: 20vw;
+    margin: 8vw 25vw;
+    
+    p.certificate-name{
+      background:#f0f8ff;
+      color:black;
+      margin: -100px 8vw -60px;
+      font-size: 2.5vw;
+    }
+    
+    img {
+    width: 30vw;
+    height: 15vw;
+    margin-top: 8vw;
+    }
+    
+  }
+  
+}
+
+div.contact {
+  background-color: black;
+  margin-top: -5vw;
+  padding-bottom: 30vw; 
+  color:white;
+  
+  .info {
+    float: left;
+    margin-left: 15vw;
+    font-size: 2vw;
+    margin-top: -1.8vw;
+}
+  
+  h3 {
+    font-size: 2.8vw;
+    padding-top: 7vw;
+  }
+  
+  div.link-section {
+    margin-top: 40px;
+  }
+  
+  a.page-link {
+    padding: 20px 10px 20px;
+    color:white;
+  }
+  a.linkedin {
+    background: #007bb5;
+  }
+  a.fcc {
+    background: green;
+  }
+  a.github {
+    background: black;
+  }
+  
+  a.facebook {
+    background: #4267b2;
+  }
+  
+  .form {
+    float:right;
+    color:white;
+    margin-right: 12vw;
+    font-size: 2vw;
+    
+    label {
+      font-weight:bold;
+    }
+    
+    input.form-input {
+      border: none;
+    border-bottom: 0.5vw solid white;
+    background-color: transparent;
+    width: 20vw;
+    text-align:center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Allan', cursive;
+    font-size: 2vw;
+    outline: none;
+    }
+    
+    p.msg-label {
+    margin-right: 23vw;
+    margin-bottom: -2.9vw;
+    font-weight: bold;
+     }
+    
+    textarea.form-text-area {
+    border: none;
+    border: 0.5vw solid white;
+    margin-right: -6vw;
+    background-color: transparent;
+    height: 6vw;
+    width: 19vw;
+    color: white;
+    font-family: 'Allan', cursive;
+    font-size: 2vw;
+    }
+    
+     .submit-btn {
+    padding: 0.4vw 7.7vw 0.4vw 7.7vw;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 2vw 0px 0px 6vw;
+    color: black;
+    font-family: 'Allan', cursive;
+    font-size: 2vw;
+    background: @gold-hex;
+    cursor: pointer;
+      
+      &:hover{
+        color:white;
+      }
+       
+    }
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+  nav.navbar {
+  font-size:2.5vw;
+  }
+  
+  
+  body{ 
+    .landing {
+      height: 900px;
+      h1 {
+  font-size: 10vw;   
+     padding: 300px 50px 0px 50px;
+      }
+      
+      h3{
+  margin: -6.5vw 5vw 4vw;
+    font-size: 4vw;
+      }
+      
+      p{ 
+     font-size: 3.2vw;
+     margin: -2vw 5vw;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  div.certifications div.certification-item img {
+    margin-top: 12vw;
+  }
+  
+  div.certifications div.certification-item p.certificate-name {
+   margin: -90px 8vw -60px;
+  }
+  
+  div.contact h3 {
+    padding-top:12vw;
+  }
+
+div.portfolio h2 {
+  padding-top:12vw;
+  }
+
+.about h2 {
+  padding-top:12vw;
+  font-size:5vw;
+  }  
+  
+  .about div.origin-card p {
+    font-size:3.5vw;
+    
+  }
+  
+div.portfolio h2 {
+   font-size:5vw;
+  }
+  
+  div.certifications h3 {
+   font-size:5vw;
+  }
+  
+  div.contact h3 {
+   font-size:5vw;
+  }
+  
+  div.contact {
+   padding-bottom:45vw 
+  }
+    
+    div.contact .info{
+        float: left;
+        margin-left: 0;
+        font-size: 4vw;
+        margin-top: -1.8vw;
+        width: 100%
+    }
+    
+    div.contact .form {
+        margin-right: 24%;
+        margin-top: 40px;
+        font-size: 4vw;
+    }
+    
+    div.contact .form input.form-input {
+    border: none;
+    border-bottom: 0.5vw solid white;
+    background-color: transparent;
+    width: 35vw;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Allan', cursive;
+    font-size: 4vw;
+    outline: none;
+    padding: 1px;
+}
+    div.contact .form p.msg-label {
+    margin-right: 40vw;
+    margin-bottom: -2.9vw;
+    font-weight: bold;
+}
+    
+    div.contact .form textarea.form-text-area {
+    border: none;
+    border: 0.5vw solid white;
+    margin-right: -13vw;
+    margin-top: -2vw;
+    background-color: transparent;
+    height: 13vw;
+    width: 35vw;
+    color: white;
+    font-family: 'Allan', cursive;
+    font-size: 2vw;
+}
+    
+    div.contact .form .submit-btn {
+    padding: 0.4vw 15vw 0.4vw 15vw;
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 2vw 0px 6vw;
+    color: black;
+    position: relative;
+    left: 6.5vw;
+    font-family: 'Allan', cursive;
+    font-size: 4vw;
+    background: #c5b358;
+    cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+ div.portfolio div.portfolio-item {
+        width: 90vw;
+        margin: 50px 5vw;
+        padding-bottom: 0;
+ }
+  
+  div.portfolio div.portfolio-item div.portfolio-description p{
+      font-size:15px;
+  }
+    div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header{
+        font-size: 20px;
+    }
+  
+  div.portfolio div.portfolio-item div.portfolio-screenshot {
+   
+    max-height: 250px;
+      min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  body{ 
+    .landing {
+      height: 700px;
+      h1 {  
+     padding: 200px 50px 0px 50px;
+      }
+    }
+  }
+   div.certifications div.certification-item img {
+    margin-top: 22vw;
+  } 
+
+div.certifications div.certification-item {
+  height: 10vw;
+  }
+}
+

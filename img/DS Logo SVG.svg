@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="207px" viewBox="0 0 312 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,22 L511,22 L511,62 L0,62 L0,22 Z M0,67 L511,67 L511,107 L0,107 L0,67 Z M0,112 L511,112 L511,152 L0,152 L0,112 Z M0,157 L511,157 L511,197 L0,197 L0,157 Z M0,202 L511,202 L511,216 L0,216 L0,202 Z M11,0 L511,0 L511,17 L11,17 L11,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-2" transform="translate(-95.000000, -350.000000)">
+            <g id="Group-6" transform="translate(-11.000000, 313.000000)">
+                <g id="DS" transform="translate(0.000000, 31.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <text stroke="#C5B358" stroke-width="1.5" mask="url(#mask-2)" font-family="AppleGothic" font-size="250" font-weight="normal" fill="#FFFFFF" fill-opacity="0">
+                        <tspan x="96.375" y="209">DS</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
