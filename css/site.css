@@ -155,7 +155,7 @@ div.portfolio a.portfolio-link {
 div.portfolio div.portfolio-item {
   display: flex;
   width: 60vw;
-  height: 400px;
+  height: 500px;
   margin: 5vw 20vw 5vw;
   border-radius: 10px;
 }
@@ -191,7 +191,7 @@ div.portfolio div.portfolio-item div.portfolio-screenshot img {
 div.portfolio div.portfolio-item-inverse {
   display: flex;
   width: 60vw;
-  height: 400px;
+  height: 500px;
   margin: 5vw 20vw 5vw;
   border-radius: 10px;
 }
