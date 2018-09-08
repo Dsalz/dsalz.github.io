@@ -6,7 +6,7 @@ body {
   letter-spacing: 1px;
 }
 body .landing {
-  height: 800px;
+  height: 950px;
   position: relative;
 }
 body .landing img {
@@ -31,7 +31,7 @@ body .landing h1 {
 body .landing h3 {
   color: white;
   font-size: 3vw;
-  top: 65%;
+  top: 70%;
   left: 0;
   right: 0;
   font-weight: 400;
@@ -46,14 +46,22 @@ body .landing span {
 }
 body .landing a {
   color: #c5b358;
-  font-size: 35px;
-  top: 65%;
-  right: 5%;
+  font-size: 40px;
+  left: 10%;
+  bottom: 15%;
   width: fit-content;
   font-weight: 700;
   position: absolute;
   text-decoration: none;
   z-index: 2;
+}
+body .landing img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 nav.navbar {
   color: #c5b358;
@@ -372,8 +380,8 @@ div.contact .form .submit-btn:hover {
 }
 @media screen and (max-width: 800px) {
   nav.navbar {
-    font-size:3vw;
-    }
+    font-size: 3vw;
+  }
   div.portfolio div.portfolio-item,
   div.portfolio div.portfolio-item-inverse {
     height: min-content;
@@ -467,9 +475,8 @@ div.contact .form .submit-btn:hover {
 }
 @media screen and (max-width: 650px) {
   nav.navbar {
-    font-size:4vw;
-    }
-  
+    font-size: 4vw;
+  }
   .about div.origin-card {
     padding: 3vw;
   }
