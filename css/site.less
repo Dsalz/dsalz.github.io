@@ -2,47 +2,78 @@
 
 @gold-hex: #c5b358;
 
-@mach1-color: linear-gradient(120deg,#EE9CA7,#FFDDE1);
+@mach1-color: #c5b358;
   
-@mach2-color:linear-gradient(120deg,#2193B0,#00FFFF);
+@mach2-color:#c5b358;
 
-@mach3-color: linear-gradient(120deg,#F12711,#F5AF19);
+@mach3-color: #c5b358;
 
-@mach4-color: linear-gradient(120deg,#B92B27,#1565C0);
+@mach4-color: #c5b358;
 
 
 body {
   text-align: center;
-  background : linear-gradient(120deg, #454343, #000000 );
+  background : black;
   margin: 0;
   font-family: 'Allan', cursive;
   letter-spacing: 1px;
   
   .landing {
     height: 800px;
+    position: relative;
+
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: -10%;
+      left: 0;
+      z-index: 1;
+    }
   
   h1 {
     color: white;
-    padding: 250px 50px 0px 50px;
     font-size: 7vw;
-    font-weight:700;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+    display: none;
   }
   
   h3{
     color: white;
-    margin: -4vw 5vw 4vw;
     font-size: 3vw;
-    display:none;
+    top: 65%;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    position: absolute;
+    z-index: 2;
   }
   
-  p{
+  span{
     color: @gold-hex;
-    margin: -2vw 5vw 4vw;
-    font-size: 2vw;
-    display: none;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 2;
+  }
+  a{
+    color: #c5b358;
+    font-size: 35px;
+    top: 65%;
+    right: 5;
+    width: fit-content;
+    font-weight: 700;
+    position: absolute;
+    text-decoration: none;
+    z-index: 2;
   }
 }
 }
+
 
 nav.navbar {
   color: @gold-hex;
@@ -163,6 +194,7 @@ div.portfolio {
   div.portfolio-item {
     display:flex;
     width: 60vw;
+    height: 400px;
     margin: 5vw 20vw 5vw;
     border-radius: 10px;
       &:hover {
@@ -173,8 +205,51 @@ div.portfolio {
     width: 35%;
     padding: 10px;
     color: black;
-    height: inherit;
       border-radius: 10px 0px 0px 10px;
+      
+      h3.portfolio-header {
+        font-size:35px;
+        margin-bottom: -5px;
+      }
+      
+      hr.portfolio-header-line {
+        border: none;
+        height: 0.3vw;
+        background-color: white;
+      }
+      
+      p {
+        font-size:25px;
+      }
+    }
+    
+    div.portfolio-screenshot {
+      width: 65%;
+
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+      }
+    }
+    
+  }
+
+  div.portfolio-item-inverse {
+    display:flex;
+    width: 60vw;
+    height: 400px;
+    margin: 5vw 20vw 5vw;
+    border-radius: 10px;
+      &:hover {
+    box-shadow: 2px 3px 39px 2px rgba(0,0,0,.5);
+    }
+    
+    div.portfolio-description {
+    width: 35%;
+    padding: 10px;
+    color: black;
+      border-radius: 0px 10px 10px 0px;
       
       h3.portfolio-header {
         font-size:2.5vw;
@@ -194,8 +269,12 @@ div.portfolio {
     
     div.portfolio-screenshot {
       width: 65%;
-      min-height:300px;
-      max-height: 300px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+      }
     }
     
   }
@@ -285,7 +364,7 @@ div.contact {
   }
   
   a.page-link {
-    padding: 20px 10px 20px;
+    padding: 30px 30px;
     color:white;
   }
   a.linkedin {
@@ -374,17 +453,12 @@ div.contact {
       height: 900px;
       h1 {
   font-size: 10vw;   
-     padding: 300px 50px 0px 50px;
+     top: 60%;
       }
       
       h3{
-  margin: -6.5vw 5vw 4vw;
-    font-size: 4vw;
-      }
-      
-      p{ 
-     font-size: 3.2vw;
-     margin: -2vw 5vw;
+    font-size: 6vw;
+    top: 70%;
       }
     }
   }
@@ -392,6 +466,14 @@ div.contact {
 }
 
 @media screen and (max-width: 800px){
+
+  nav.navbar {
+    font-size:3vw;
+    }
+
+div.portfolio div.portfolio-item, div.portfolio div.portfolio-item-inverse{
+  height: min-content;
+}
   div.certifications div.certification-item img {
     margin-top: 12vw;
   }
@@ -497,20 +579,29 @@ div.portfolio h2 {
 
 @media screen and (max-width: 650px){
 
- div.portfolio div.portfolio-item {
+  nav.navbar {
+    font-size:4vw;
+    }
+
+  .about div.origin-card{
+    padding: 3vw;
+  }
+
+ div.portfolio div.portfolio-item, div.portfolio div.portfolio-item-inverse {
         width: 90vw;
         margin: 50px 5vw;
         padding-bottom: 0;
+        
  }
   
-  div.portfolio div.portfolio-item div.portfolio-description p{
-      font-size:15px;
+  div.portfolio div.portfolio-item div.portfolio-description p, div.portfolio div.portfolio-item-inverse div.portfolio-description p{
+      font-size:14px;
   }
-    div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header{
-        font-size: 20px;
+    div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header, div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header{
+        font-size: 5vw;
     }
   
-  div.portfolio div.portfolio-item div.portfolio-screenshot {
+  div.portfolio div.portfolio-item div.portfolio-screenshot, div.portfolio div.portfolio-item-inverse div.portfolio-screenshot{
    
     max-height: 250px;
       min-height: 250px;
@@ -521,9 +612,6 @@ div.portfolio h2 {
   body{ 
     .landing {
       height: 700px;
-      h1 {  
-     padding: 200px 50px 0px 50px;
-      }
     }
   }
    div.certifications div.certification-item img {

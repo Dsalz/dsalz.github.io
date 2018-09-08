@@ -1,30 +1,59 @@
 body {
   text-align: center;
-  background: linear-gradient(120deg, #454343, #000000);
+  background: black;
   margin: 0;
   font-family: 'Allan', cursive;
   letter-spacing: 1px;
 }
 body .landing {
   height: 800px;
+  position: relative;
+}
+body .landing img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  z-index: 1;
 }
 body .landing h1 {
   color: white;
-  padding: 250px 50px 0px 50px;
   font-size: 7vw;
+  top: 50%;
+  left: 0;
+  right: 0;
   font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  display: none;
 }
 body .landing h3 {
   color: white;
-  margin: -4vw 5vw 4vw;
   font-size: 3vw;
-  display: none;
+  top: 65%;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  position: absolute;
+  z-index: 2;
 }
-body .landing p {
+body .landing span {
   color: #c5b358;
-  margin: -2vw 5vw 4vw;
-  font-size: 2vw;
-  display: none;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 2;
+}
+body .landing a {
+  color: #c5b358;
+  font-size: 35px;
+  top: 65%;
+  right: 5%;
+  width: fit-content;
+  font-weight: 700;
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
 }
 nav.navbar {
   color: #c5b358;
@@ -38,11 +67,10 @@ nav.navbar a.logo {
   color: #c5b358;
   cursor: pointer !important;
 }
-
-nav.navbar a.logo img{
-    width:50px;
-      margin-bottom: -10px;
-    margin-top: -10px;
+nav.navbar a.logo img {
+  width: 50px;
+  margin-bottom: -10px;
+  margin-top: -10px;
 }
 nav.navbar div.pagenavs {
   float: right;
@@ -119,8 +147,8 @@ div.portfolio a.portfolio-link {
 div.portfolio div.portfolio-item {
   display: flex;
   width: 60vw;
+  height: 400px;
   margin: 5vw 20vw 5vw;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 div.portfolio div.portfolio-item:hover {
@@ -128,13 +156,12 @@ div.portfolio div.portfolio-item:hover {
 }
 div.portfolio div.portfolio-item div.portfolio-description {
   width: 35%;
+  padding: 10px;
   color: black;
-    padding: 10px;
-  height:inherit;
   border-radius: 10px 0px 0px 10px;
 }
 div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header {
-  font-size: 2.5vw;
+  font-size: 35px;
   margin-bottom: -5px;
 }
 div.portfolio div.portfolio-item div.portfolio-description hr.portfolio-header-line {
@@ -143,39 +170,72 @@ div.portfolio div.portfolio-item div.portfolio-description hr.portfolio-header-l
   background-color: white;
 }
 div.portfolio div.portfolio-item div.portfolio-description p {
-  font-size: 2vw;
+  font-size: 25px;
 }
 div.portfolio div.portfolio-item div.portfolio-screenshot {
   width: 65%;
-  min-height:300px;
-  max-height: 300px;
 }
-/*
 div.portfolio div.portfolio-item div.portfolio-screenshot img {
-    height: 30vw;
+  width: 100%;
+  height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
-*/
+div.portfolio div.portfolio-item-inverse {
+  display: flex;
+  width: 60vw;
+  height: 400px;
+  margin: 5vw 20vw 5vw;
+  border-radius: 10px;
+}
+div.portfolio div.portfolio-item-inverse:hover {
+  box-shadow: 2px 3px 39px 2px rgba(0, 0, 0, 0.5);
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-description {
+  width: 35%;
+  padding: 10px;
+  color: black;
+  border-radius: 0px 10px 10px 0px;
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header {
+  font-size: 2.5vw;
+  margin-bottom: -5px;
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-description hr.portfolio-header-line {
+  border: none;
+  height: 0.3vw;
+  background-color: white;
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-description p {
+  font-size: 2vw;
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-screenshot {
+  width: 65%;
+}
+div.portfolio div.portfolio-item-inverse div.portfolio-screenshot img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
 div.portfolio .Mach-1 {
-  background: linear-gradient(120deg, #ee9ca7, #ffdde1);
+  background: #c5b358;
 }
 div.portfolio .Mach-1 hr.portfolio-header-line {
   width: 10vw;
 }
 div.portfolio .Mach-2 {
-  background: linear-gradient(120deg, #2193b0, #00ffff);
+  background: #c5b358;
 }
 div.portfolio .Mach-2 hr.portfolio-header-line {
   width: 10vw;
 }
 div.portfolio .Mach-3 {
-  background: linear-gradient(120deg, #f12711, #f5af19);
+  background: #c5b358;
 }
 div.portfolio .Mach-3 hr.portfolio-header-line {
   width: 10vw;
 }
 div.portfolio .Mach-4 {
-  background: linear-gradient(120deg, #b92b27, #1565c0);
+  background: #c5b358;
 }
 div.portfolio .Mach-4 hr.portfolio-header-line {
   width: 10vw;
@@ -228,7 +288,7 @@ div.contact div.link-section {
   margin-top: 40px;
 }
 div.contact a.page-link {
-  padding: 20px 10px 20px;
+  padding: 30px 30px;
   color: white;
 }
 div.contact a.linkedin {
@@ -257,6 +317,7 @@ div.contact .form input.form-input {
   border-bottom: 0.5vw solid white;
   background-color: transparent;
   width: 20vw;
+  text-align: center;
   margin-bottom: 20px;
   color: white;
   font-family: 'Allan', cursive;
@@ -293,98 +354,74 @@ div.contact .form .submit-btn {
 div.contact .form .submit-btn:hover {
   color: white;
 }
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   nav.navbar {
-  font-size:2.5vw;
+    font-size: 2.5vw;
   }
-  
-  
-  body{ 
-    .landing {
-      height: 900px;
-      h1 {
-  font-size: 10vw;   
-     padding: 300px 50px 0px 50px;
-      }
-      
-      h3{
-  margin: -6.5vw 5vw 4vw;
-    font-size: 4vw;
-      }
-      
-      p{ 
-     font-size: 3.2vw;
-     margin: -2vw 5vw;
-      }
-    }
+  body .landing {
+    height: 900px;
   }
-
+  body .landing h1 {
+    font-size: 10vw;
+    top: 60%;
+  }
+  body .landing h3 {
+    font-size: 6vw;
+    top: 70%;
+  }
 }
-
-
-
-/*Media Queries*/
-
-@media screen and (max-width: 800px){
-    
+@media screen and (max-width: 800px) {
+  nav.navbar {
+    font-size:3vw;
+    }
+  div.portfolio div.portfolio-item,
+  div.portfolio div.portfolio-item-inverse {
+    height: min-content;
+  }
   div.certifications div.certification-item img {
     margin-top: 12vw;
   }
-  
   div.certifications div.certification-item p.certificate-name {
-   margin: -90px 8vw -60px;
+    margin: -90px 8vw -60px;
   }
-  
   div.contact h3 {
-    padding-top:12vw;
+    padding-top: 12vw;
   }
-
-div.portfolio h2 {
-  padding-top:12vw;
+  div.portfolio h2 {
+    padding-top: 12vw;
   }
-
-.about h2 {
-  padding-top:12vw;
-  font-size:5vw;
-  }  
-  
+  .about h2 {
+    padding-top: 12vw;
+    font-size: 5vw;
+  }
   .about div.origin-card p {
-    font-size:3.5vw;
-    
+    font-size: 3.5vw;
   }
-  
-div.portfolio h2 {
-   font-size:5vw;
+  div.portfolio h2 {
+    font-size: 5vw;
   }
-  
   div.certifications h3 {
-   font-size:5vw;
+    font-size: 5vw;
   }
-  
   div.contact h3 {
-   font-size:5vw;
+    font-size: 5vw;
   }
-  
   div.contact {
-   padding-bottom:45vw 
+    padding-bottom: 45vw;
   }
-    
-        div.contact .info{
-        float: left;
-        margin-left: 0;
-        font-size: 4vw;
-        margin-top: -1.8vw;
-        width: 100%
-    }
-    
-    div.contact .form {
-        margin-right: 24%;
-        margin-top: 40px;
-        font-size: 4vw;
-    }
-    
-    div.contact .form input.form-input {
+  div.contact .info {
+    float: left;
+    margin-left: 0;
+    font-size: 4vw;
+    margin-top: -1.8vw;
+    width: 100%;
+  }
+  div.contact .form {
+    margin-right: 24%;
+    margin-top: 40px;
+    font-size: 4vw;
+  }
+  div.contact .form input.form-input {
     border: none;
     border-bottom: 0.5vw solid white;
     background-color: transparent;
@@ -396,14 +433,13 @@ div.portfolio h2 {
     font-size: 4vw;
     outline: none;
     padding: 1px;
-}
-    div.contact .form p.msg-label {
+  }
+  div.contact .form p.msg-label {
     margin-right: 40vw;
     margin-bottom: -2.9vw;
     font-weight: bold;
-}
-    
-    div.contact .form textarea.form-text-area {
+  }
+  div.contact .form textarea.form-text-area {
     border: none;
     border: 0.5vw solid white;
     margin-right: -13vw;
@@ -414,9 +450,8 @@ div.portfolio h2 {
     color: white;
     font-family: 'Allan', cursive;
     font-size: 2vw;
-}
-    
-    div.contact .form .submit-btn {
+  }
+  div.contact .form .submit-btn {
     padding: 0.4vw 15vw 0.4vw 15vw;
     border: 1px solid transparent;
     text-align: center;
@@ -428,45 +463,44 @@ div.portfolio h2 {
     font-size: 4vw;
     background: #c5b358;
     cursor: pointer;
-    }
-}
-
-@media screen and (max-width: 650px){
-
- div.portfolio div.portfolio-item {
-        width: 90vw;
-        margin: 50px 5vw;
-        padding-bottom: 0;
- }
-  
-  div.portfolio div.portfolio-item div.portfolio-description p{
-      font-size:15px;
   }
-    div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header{
-        font-size: 20px;
+}
+@media screen and (max-width: 650px) {
+  nav.navbar {
+    font-size:4vw;
     }
   
-  div.portfolio div.portfolio-item div.portfolio-screenshot {
-   
-    min-height: 250px;
+  .about div.origin-card {
+    padding: 3vw;
+  }
+  div.portfolio div.portfolio-item,
+  div.portfolio div.portfolio-item-inverse {
+    width: 90vw;
+    margin: 50px 5vw;
+    padding-bottom: 0;
+  }
+  div.portfolio div.portfolio-item div.portfolio-description p,
+  div.portfolio div.portfolio-item-inverse div.portfolio-description p {
+    font-size: 14px;
+  }
+  div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header,
+  div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header {
+    font-size: 5vw;
+  }
+  div.portfolio div.portfolio-item div.portfolio-screenshot,
+  div.portfolio div.portfolio-item-inverse div.portfolio-screenshot {
     max-height: 250px;
+    min-height: 250px;
   }
 }
-
-@media screen and (max-width: 500px){
-  body{ 
-    .landing {
-      height: 700px;
-      h1 {  
-     padding: 200px 50px 0px 50px;
-      }
-    }
+@media screen and (max-width: 500px) {
+  body .landing {
+    height: 700px;
   }
-   div.certifications div.certification-item img {
+  div.certifications div.certification-item img {
     margin-top: 22vw;
-  } 
-
-div.certifications div.certification-item {
-  height: 10vw;
+  }
+  div.certifications div.certification-item {
+    height: 10vw;
   }
 }

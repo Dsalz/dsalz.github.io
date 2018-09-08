@@ -2,111 +2,238 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="img/DS Logo white Background.png">
+    <link rel="canonical" href="https://damola.cf/">
+    <meta rel="description" content="Hi I'm Damola, a web developer and designer. 
+    I'm very passionate about software development and some (mostly me) have said im the best web developer in Lagos nay Nigeria nay THE WORLD.
+    I'd love to work with you :) ">
     <title>Damola Salisu's Portfolio Page!</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/site.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Allan:400,700">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   
   </head>
 
   <body>
+                  <!-- Navbar -->
             <nav class="navbar inlanding">
+               
                   <a href="#" class="logo">
-                      <img src="img/DS%20Logo.png"/>
+                     
+                        <img src="img/DS Logo.png"/>
+                  
                   </a>
+                  
                   <div class="pagenavs">
-                          <a href="#about"
+                  
+                        <!-- <a href="#about"
                              class="about-link">ABOUT</a>
                           <a href="#portfolio" class="portfolio-link">PORTFOLIO</a>
-                          <a href="#contact" class="contact-link">CONTACT</a>
+                          <a href="#contact" class="contact-link">CONTACT</a> -->
+                  
                           <a href="/new-assets/Damola%20Salisu%20CV.doc" class="Resume-download">DOWNLOAD RESUME </a>
-                      </div>
-             </nav>
+                      
+                   </div>
+             
+            </nav>
 
+            <!-- Landing Page -->
             <div class="landing">
+
+                        <!-- <img srcset="img/port-back-sm.png 500w, img/port-back-md.png 800w, img/port-back-lg.png 1000w," 
+                        sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, 1000px " 
+                        > -->
+
+                        <picture >
+                              <source media="(max-width: 600px)" srcset = "img/port-back-sm.png">
+                              <source media="(max-width: 900px)" srcset = "img/port-back-md.png">
+                              <img src="img/port-back-lg.png" style="
+                              height: 100%;
+                              width: 100%;
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              z-index: 1;
+                          ">
+                        </picture>
+
+                        
+
                   <h1>DAMOLA SALISU</h1>
-                  <h3 id="humble-brag">The greatest web developer of all time</h3>
-                  <p id="disclaimer">(Unofficially of course)</p>
+                  
+                  <h3 id="stuffido"></h3>
+
+                  <a href="#about" >
+                        &#x2193;
+                  </a>
+           
             </div>
 
 
+            <!-- About Section -->
             <div class="about" id="about">
+                 
                   <h2>My Origin Story</h2>
+                 
                   <div class="origin-card">
+                 
                         <p>Hey there! If you made it this far then i must have done something right when coding this site </p>
-                        <p>My name is Damola Salisu and i am a web developer.
+                 
+                        <p>
+                            My name is Damola Salisu and i am a web developer and designer.
+
+                            <br>
+                            <br>
 
                             Growing up i've always had a great admiration of people who code in movies because the ability to bring something to life with only your hands and a computer is basically a superpower.
+
+                            <br>
+                            <br>
+
+                            I'm very passionate about software development and some (mostly me) have said im the best web developer in Lagos nay Nigeria nay THE WORLD
                         </p>
 
                         <p><strong>So here i am, a handsome fella out to change the world one web app or website at a time. </strong></p>
+                  
                   </div>
+        
             </div>
 
 
+            <!-- Portfolio Section -->
             <div class ="portfolio" id="portfolio">
-                      <h2>Some Stuff I've Done</h2>
+                      
+                  <h2>Some Stuff I've Done</h2>
 
-                      <a href="/PublicHoliday/" target="_blank" class ="portfolio-link">
-                          <div class="portfolio-item wow slideInLeft" data-wow-duration="2s">
-                                <div class = "portfolio-description Mach-1">
-                                      <h3 class="portfolio-header">Public Holiday Countdown Site</h3>
-                                      <hr class="portfolio-header-line"/>
-                                      <p>I used HTML, CSS and Javascript to develop a site that counts down to the nearest holiday in my country.
-                                      Did the logo and branding as well.</p>
-                                </div>
-                                <div class= "portfolio-screenshot" style = "background-image:url('img/Public%20holiday%20Website.png'); background-position: center; background-size:contain; background-repeat: no-repeat">
-                                </div>
-                          </div>
+                              <!-- Public Holiday Site -->
+                        <a href="/PublicHoliday/" target="_blank" class ="portfolio-link">
+                  
+                              <div class="portfolio-item">
+                        
+                                    <div class = "portfolio-description Mach-1">
+                        
+                                          <h3 class="portfolio-header">Public Holiday Countdown Site</h3>
+                        
+                                          <hr class="portfolio-header-line"/>
+                        
+                                          <p>I used HTML, CSS and Javascript to develop a site that counts down to the nearest holiday in my country.
+                                          Did the logo and branding as well.
+                                          
+                                          </p>
+                                    
+                                    </div>
+                                    
+                                    <div class= "portfolio-screenshot" >
+
+                                          <img src = "img/Public holiday Website.png" alt= "Damola Salisu's Public holiday Website Application Screenshot"/> 
+
+                                    </div>
+                              
+                              </div>
+                       
                         </a>
-                
-                        <a href="/Pixel-Art/" target="_blank" class ="portfolio-link">
-                              <div class="portfolio-item wow slideInRight" data-wow-duration="2s">
 
-                                    <div class= "portfolio-screenshot" style = "background-image:url('img/Pixel%20Art%20app.png'); background-position: center; background-size:contain; background-repeat: no-repeat">
+                        <!-- Arcade Game App -->
+                        <a href="/Frogger-Arcade-Game/" target="_blank" class ="portfolio-link">
+                              
+                              <div class="portfolio-item-inverse">
+
+                                    <div class= "portfolio-screenshot">
+                                          
+                                          <img src = "img/Arcade Game screenshot.png" alt= "Damola Salisu's Arcade Game Application Screenshot"/> 
+
                                     </div>
 
-                                    <div class = "portfolio-description Mach-2" style="border-radius: 0px 10px 10px 0px;">
-                                          <h3 class="portfolio-header">Pixel Art Application</h3>
+                                    <div class = "portfolio-description Mach-2" >
+                              
+                                          <h3 class="portfolio-header">Arcade Game Application</h3>
+                              
                                           <hr class="portfolio-header-line"/>
-                                          <p>Developed an application for painting using HTML, CSS and Jquery as a requirement for the completion of the Google ALC Front-end Scholarship</p>
+                              
+                                          <p>Developed an arcade game application using HTML5 and ES6 Javascript while taking the Front-End nanodegree program at Udacity</p>                                          
+                              
                                     </div>
 
                               </div>
                          </a>
+                
 
-                       <a href="https://codepen.io/Dsalz/full/zaEepZ" target="_blank" class ="portfolio-link">      
-                              <div class="portfolio-item wow slideInLeft" data-wow-duration="2s">
+                         <!-- Memory Game App -->
+                       <a href="/Memory-Game-Project/" target="_blank" class ="portfolio-link">      
+                              
+                              <div class="portfolio-item">
 
                                     <div class = "portfolio-description Mach-3">
-                                          <h3 class="portfolio-header">Power Bank Landing Page</h3>
+                              
+                                          <h3 class="portfolio-header">Memory Game</h3>
+                              
                                           <hr class="portfolio-header-line"/>
-                                          <p>Developed a static landing page for a power bank company as a challenge on freecodecamp</p>
+                              
+                                          <p>Developed a Javascript memory game application while taking the Front-End nanodegree program at Udacity</p>
+                              
                                     </div>
 
-                                    <div class= "portfolio-screenshot" style = "background-image:url('img/Power%20Bank%20Landing%20Page.png'); background-position: center; background-size:contain; background-repeat: no-repeat">
+                                    <div class= "portfolio-screenshot">
+
+                                                <img src = "img/Memory Game Screenshot.png" alt= "Damola Salisu's Memory Game Application Screenshot"/> 
+
                                     </div>
 
                               </div>
                       </a>
 
+                      <!-- Pixel Art App -->
+                      <a href="/Pixel-Art/" target="_blank" class ="portfolio-link">
+                        
+                              <div class="portfolio-item-inverse">
+
+                                    <div class= "portfolio-screenshot">
+                                          
+                                          <img src = "img/Pixel Art app.png" alt= "Damola Salisu's Pixel Art Application Screenshot"/> 
+
+                                    </div>
+
+                                    <div class = "portfolio-description Mach-2">
+
+                                          <h3 class="portfolio-header">Pixel Art Application</h3>
+
+                                          <hr class="portfolio-header-line"/>
+
+                                          <p>Developed an application for painting using HTML, CSS and Jquery as a requirement for the completion of the Google ALC Front-end Scholarship</p>
+
+                                    </div>
+
+                              </div>
+
+                       </a>
+
+
+                       <!-- To do list App -->
+
                       <a href="https://codepen.io/Dsalz/full/aGxRZw" target="_blank" class ="portfolio-link">
-                          <div class="portfolio-item wow slideInRight" data-wow-duration="2s">
+                          
+                              <div class="portfolio-item">
 
-                                <div class= "portfolio-screenshot" style = "background-image:url('img/To-Do%20App.png'); background-position: center; background-size:contain; background-repeat: no-repeat">
+
+                                    <div class = "portfolio-description Mach-4">
+                                    
+                                          <h3 class="portfolio-header">To-do List App</h3>
+                                    
+                                          <hr class="portfolio-header-line"/>
+                                    
+                                          <p>Developed a to-do list app (named TO-DOoles) using Jquery, Html and Css</p>
+                                    
+                                    </div>
+
+                                <div class= "portfolio-screenshot">
+
+                                          <img src = "img/To-Do App.png" alt= "Damola Salisu's To Do List Application Screenshot"/> 
+
                                 </div>
 
-                                <div class = "portfolio-description Mach-4" style="border-radius: 0px 10px 10px 0px;">
-                                      <h3 class="portfolio-header">To-do List App</h3>
-                                      <hr class="portfolio-header-line"/>
-                                      <p>Developed a to-do list app (named TO-DOoles) using Jquery, Html and Css</p>
-                                </div>
-
-                          </div>
+                              </div>
                       </a>
 
 
@@ -128,28 +255,45 @@
             -->
 
 
-
+                        <!-- Contact Section -->
                 <div class="contact" id="contact">
 
                       <h3>Page Links</h3>
 
                       <div class = "link-section">
-                            <a class="page-link linkedin" href="https://www.linkedin.com/in/damola-salisu-350ba579/" target="_blank"  title="Linkedin" >
-                              <i class = "fa fa-2x fa-linkedin">
-                              </i>
-                            </a>
-                             <a class="page-link fcc" href="https://www.freecodecamp.org/dsalz" target="_blank"  title="FreeCodeCamp">
-                              <i class = "fa fa-2x fa-free-code-camp">
-                              </i>
-                            </a>
-                             <a class="page-link github" href="https://github.com/Dsalz" target="_blank" title="Github">
-                              <i class = "fa fa-2x fa-github">
-                              </i>
-                            </a>
-                             <a href="https://www.facebook.com/damola.salisu" target="_blank" title="Facebook" class="page-link facebook">
-                              <i class = "fa fa-2x fa-facebook">
-                              </i>
-                            </a>
+                       
+                              <a class="page-link linkedin" href="https://www.linkedin.com/in/damola-salisu-350ba579/" target="_blank"  title="Linkedin" >
+                        
+                                    <i class = "fa fa-2x fa-linkedin">
+                        
+                                    </i>
+                        
+                              </a>
+                        
+                              <a class="page-link fcc" href="https://www.freecodecamp.org/dsalz" target="_blank"  title="FreeCodeCamp">
+                        
+                                    <i class = "fa fa-2x fa-free-code-camp">
+                        
+                                    </i>
+                        
+                              </a>
+                        
+                              <a class="page-link github" href="https://github.com/Dsalz" target="_blank" title="Github">
+                        
+                                    <i class = "fa fa-2x fa-github">
+                        
+                                    </i>
+                        
+                              </a>
+                        
+                              <a href="https://www.facebook.com/damola.salisu" target="_blank" title="Facebook" class="page-link facebook">
+                        
+                                    <i class = "fa fa-2x fa-facebook">
+                        
+                                    </i>
+                        
+                              </a>
+                      
                       </div>
 
                       <br>
@@ -157,25 +301,39 @@
                       <h3>Contact Info</h3>
 
                       <div class="info">
-                            <p><strong>Email :</strong> salisu.damola@yahoo.com</p>
-                            <p><strong>Phone Number :</strong> +2348146292275</p>
+                  
+                              <p><strong>Email :</strong> salisu.damola@yahoo.com</p>
+                        
+                              <p><strong>Phone Number :</strong> +2348146292275</p>
+                  
                       </div>
 
                       <form action="https://formspree.io/salisu.damola@yahoo.com" method="POST" class="form" id="formAl">
-                            <label for="name">Name : </label>
-                            <input type="text" class="form-input" name="name"><br>
-                            <label for="email">Email : </label>
-                            <input type="email" class="form-input" name="email"><br>
-                            <p class="msg-label">Message: </p>
-                            <textarea class="form-text-area" name="message"></textarea>
-                            <br>
-                            <input type="submit" class="btn submit-btn" value="Send"/>
+                           
+                              <label for="name">Name : </label>
+                              
+                              <input type="text" class="form-input" name="name"><br>
+                              
+                              <label for="email">Email : </label>
+                              
+                              <input type="email" class="form-input" name="email"><br>
+                              
+                              <p class="msg-label">Message: </p>
+                              
+                              <textarea class="form-text-area" name="message"></textarea>
+                              
+                              <br>
+                              
+                              <input type="submit" class="btn submit-btn" value="Send"/>
+                       
                        </form>
 
                 </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src="js/site.js"></script>
-    </body>
+    
+    <script src="js/site.min.js"></script>
+    
+   </body>
     
 </html>
