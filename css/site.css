@@ -205,7 +205,7 @@ div.portfolio div.portfolio-item-inverse div.portfolio-description {
   border-radius: 0px 10px 10px 0px;
 }
 div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header {
-  font-size: 2.5vw;
+  font-size: 35px;
   margin-bottom: -5px;
 }
 div.portfolio div.portfolio-item-inverse div.portfolio-description hr.portfolio-header-line {
@@ -214,7 +214,7 @@ div.portfolio div.portfolio-item-inverse div.portfolio-description hr.portfolio-
   background-color: white;
 }
 div.portfolio div.portfolio-item-inverse div.portfolio-description p {
-  font-size: 2vw;
+  font-size: 25px;
 }
 div.portfolio div.portfolio-item-inverse div.portfolio-screenshot {
   width: 65%;
@@ -377,7 +377,7 @@ div.contact .form .submit-btn:hover {
   div.portfolio div.portfolio-item h3, div.portfolio div.portfolio-item-inverse h3{
     font-size: 2.5vw;
   }
-  
+
   body .landing {
     height: 900px;
   }
