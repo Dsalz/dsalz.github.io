@@ -17,33 +17,34 @@ body .landing img {
   left: 0;
   z-index: 1;
 }
-body .landing h1 {
+
+body .landing-text{
   color: white;
-  font-size: 7vw;
   top: 50%;
   left: 0;
   right: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+body .landing-text h1{
+  font-size: 7vw;
   font-weight: 700;
-  position: absolute;
-  z-index: 2;
   display: none;
+  margin: 0 auto
 }
-body .landing h3 {
-  color: white;
+
+body .landing-text h3{
   font-size: 3vw;
-  top: 70%;
-  left: 0;
-  right: 0;
   font-weight: 400;
-  position: absolute;
-  z-index: 2;
+  margin: 0 auto
 }
-body .landing span {
+
+body .landing-text span{
   color: #c5b358;
   margin-left: 5px;
-  position: absolute;
-  z-index: 2;
 }
+
 body .landing a {
   color: #c5b358;
   font-size: 40px;
@@ -383,17 +384,15 @@ div.contact .form .submit-btn:hover {
   }
   body .landing h1 {
     font-size: 10vw;
+  }
+  body.landing-text{
     top: 60%;
   }
   body .landing h3 {
     font-size: 6vw;
-    top: 70%;
   }
 }
 @media screen and (max-width: 800px) {
-  body .landing h3 {
-    top:60%;
-  }
   nav.navbar {
     font-size: 3vw;
   }

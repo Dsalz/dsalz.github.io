@@ -22,6 +22,7 @@ body {
     height: 950px;
     position: relative;
 
+
     img{
       height: 100%;
       width: 100%;
@@ -30,36 +31,35 @@ body {
       left: 0;
       z-index: 1;
     }
+
+    &-text{
+      color: white;
+      top: 50%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      z-index: 2;
+
+      h1 {
+        font-size: 7vw;
+        font-weight: 700;
+        display: none;
+        margin: 0 auto;
+      }
+
+      h3{
+        font-size: 3vw;
+        font-weight: 400;
+        margin: 0 auto;
+
+        span{
+          color: @gold-hex;
+          margin-left: 5px;
+        }
+      }
+
+    }
   
-  h1 {
-    color: white;
-    font-size: 7vw;
-    top: 50%;
-    left: 0;
-    right: 0;
-    font-weight: 700;
-    position: absolute;
-    z-index: 2;
-    display: none;
-  }
-  
-  h3{
-    color: white;
-    font-size: 3vw;
-    top: 70%;
-    left: 0;
-    right: 0;
-    font-weight: 400;
-    position: absolute;
-    z-index: 2;
-  }
-  
-  span{
-    color: @gold-hex;
-    margin-left: 5px;
-    position: absolute;
-    z-index: 2;
-  }
   a{
     color: #c5b358;
     font-size: 40px;
