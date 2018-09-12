@@ -17,8 +17,7 @@ body .landing img {
   left: 0;
   z-index: 1;
 }
-
-body .landing-text{
+body .landing-text {
   color: white;
   top: 50%;
   left: 0;
@@ -26,25 +25,21 @@ body .landing-text{
   position: absolute;
   z-index: 2;
 }
-
-body .landing-text h1{
+body .landing-text h1 {
   font-size: 7vw;
   font-weight: 700;
   display: none;
-  margin: 0 auto
+  margin: 0 auto;
 }
-
-body .landing-text h3{
+body .landing-text h3 {
   font-size: 3vw;
   font-weight: 400;
-  margin: 0 auto
+  margin: 0 auto;
 }
-
-body .landing-text span{
+body .landing-text h3 span {
   color: #c5b358;
   margin-left: 5px;
 }
-
 body .landing a {
   color: #c5b358;
   font-size: 40px;
@@ -77,7 +72,7 @@ nav.navbar a.logo {
   cursor: pointer !important;
 }
 nav.navbar a.logo img {
-  width: 50px;
+  width: 4.5vw;
   margin-bottom: -10px;
   margin-top: -10px;
 }
@@ -367,29 +362,24 @@ div.contact .form .submit-btn:hover {
   nav.navbar {
     font-size: 2.5vw;
   }
-  div.portfolio div.portfolio-item, div.portfolio div.portfolio-item-inverse{
-    height: 300px;
-  }
-
-  div.portfolio div.portfolio-item p, div.portfolio div.portfolio-item-inverse p {
+  div.portfolio div.portfolio-item p,
+  div.portfolio div.portfolio-item-inverse p {
     font-size: 2vw;
   }
-
-  div.portfolio div.portfolio-item h3, div.portfolio div.portfolio-item-inverse h3{
+  div.portfolio div.portfolio-item h3,
+  div.portfolio div.portfolio-item-inverse h3 {
     font-size: 2.5vw;
   }
-
   body .landing {
     height: 900px;
   }
   body .landing h1 {
     font-size: 10vw;
-  }
-  body.landing-text{
     top: 60%;
   }
   body .landing h3 {
     font-size: 6vw;
+    top: 70%;
   }
 }
 @media screen and (max-width: 800px) {
