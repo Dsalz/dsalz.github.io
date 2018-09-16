@@ -97,7 +97,9 @@ nav.navbar {
     cursor:pointer !important;
       
       img{
-    width:4.5vw;
+    width: 5vw;
+    min-width: 50px;
+    min-height: 35px;
     margin-bottom: -10px;
     margin-top: -10px;
       }
@@ -105,6 +107,8 @@ nav.navbar {
   
   div.pagenavs{
       float: right;
+      margin-top: .3vw;
+      
     
     a{
     margin-right: 4vw;
@@ -212,7 +216,7 @@ div.portfolio {
     
     div.portfolio-description {
     width: 35%;
-    padding: 10px;
+    padding: 10px 15px;
     color: black;
       border-radius: 10px 0px 0px 10px;
       
@@ -256,7 +260,7 @@ div.portfolio {
     
     div.portfolio-description {
     width: 35%;
-    padding: 10px;
+    padding: 10px 15px;
     color: black;
       border-radius: 0px 10px 10px 0px;
       
@@ -373,7 +377,7 @@ div.contact {
   }
   
   a.page-link {
-    padding: 30px 30px;
+    padding: 30px 7%;
     color:white;
   }
   a.linkedin {
@@ -452,6 +456,12 @@ div.contact {
 }
 
 @media screen and (max-width: 1000px){
+  div.portfolio div.portfolio-item, div.portfolio div.portfolio-item-inverse {
+    width: 90vw;
+    margin: 50px 5vw;
+    padding-bottom: 0;
+    
+}
   nav.navbar {
   font-size:2.5vw;
   }
@@ -604,12 +614,7 @@ div.portfolio h2 {
     padding: 3vw;
   }
 
- div.portfolio div.portfolio-item, div.portfolio div.portfolio-item-inverse {
-        width: 90vw;
-        margin: 50px 5vw;
-        padding-bottom: 0;
-        
- }
+ 
   
   div.portfolio div.portfolio-item div.portfolio-description p, div.portfolio div.portfolio-item-inverse div.portfolio-description p{
       font-size:14px;
@@ -617,12 +622,6 @@ div.portfolio h2 {
     div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header, div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header{
         font-size: 5vw;
     }
-  
-  div.portfolio div.portfolio-item div.portfolio-screenshot, div.portfolio div.portfolio-item-inverse div.portfolio-screenshot{
-   
-    max-height: 250px;
-      min-height: 250px;
-  }
 }
 
 @media screen and (max-width: 500px){
@@ -638,5 +637,14 @@ div.portfolio h2 {
 div.certifications div.certification-item {
   height: 10vw;
   }
+
+  div.portfolio div.portfolio-item div.portfolio-description h3.portfolio-header, div.portfolio div.portfolio-item-inverse div.portfolio-description h3.portfolio-header {
+    font-size: 4vw;
+}
+
+div.portfolio div.portfolio-item div.portfolio-description p, div.portfolio div.portfolio-item-inverse div.portfolio-description p {
+  font-size: 12px;
+}
+
 }
 
