@@ -1,54 +1,56 @@
+  const stuffIDoHeader = document.getElementById('stuffido');
+  const stopShowCaseBtn = document.getElementById('stopShowcase');
 
-$(document).ready(function() {  
+  const portfolioDropdownBtn = document.getElementById('portfolio-link');
+  const portfolioDropdownLinks = document.getElementById('portfolio-links');
 
-  var pageDistance;
+  const tabLinks = document.getElementsByClassName('main-card-nav-link');
+
+  const stuffido = "=Web Developer.++++++=Web/Graphics Designer.++++++=Masked Vigilante.++++++"
+
+  const stuffidoarr = stuffido.split('');
+
+  let stuffindex = 0;
+
+  let currentStuff = "";
   
-  $('.landing h1').fadeIn (1000);
-   
-  $(window).scroll(function (){
-    
-      pageDistance = $(this).scrollTop();
-      
-      var aboutHeight = $('.about').offset().top
-      
-      if(pageDistance > (aboutHeight - 100)){
-      
-        $("nav.navbar").removeClass("inlanding");
-      
-        $("nav.navbar").addClass("left-landing");
-      
-      }
-      
-      else {  
-            $("nav.navbar").removeClass("left-landing");
-              
-            $("nav.navbar").addClass("inlanding");
-
-          }
-
-  });
-
-  var stuffido = "=Web Developer.++++++=Web/Graphics Designer.++++++=Masked Vigilante.++++++"
-
-  var stuffidoarr = stuffido.split('');
-
-  var stuffindex = 0;
-
-  var currentStuff = "";
-
-  var startShowCase = setInterval(appendStuffIDo, 200);
-  
-  function appendStuffIDo(){
+  const appendStuffIDo = () => {
 
 
-    currentStuff = (stuffidoarr[stuffindex] === ".")? currentStuff + '<span>.</span>' :(stuffidoarr[stuffindex] === "+")? currentStuff + "":(stuffidoarr[stuffindex] === "=")? "": currentStuff + stuffidoarr[stuffindex];   
+    currentStuff = (stuffidoarr[stuffindex] === ".")? currentStuff + '<span>.</span>' :(stuffidoarr[stuffindex] === "+")? currentStuff + "":(stuffidoarr[stuffindex] === "=")? "  ": currentStuff + stuffidoarr[stuffindex];   
 
-    $('#stuffido').html(currentStuff); 
+    stuffIDoHeader.innerHTML = currentStuff; 
 
     stuffindex = (stuffindex === stuffido.length-1)? 0: stuffindex + 1;
 
   }
 
+  const startShowCase = setInterval(appendStuffIDo, 200);
 
-  
-});
+  const stopShowCase = () => {
+    clearInterval(startShowCase);
+    stuffIDoHeader.innerHTML = "Web Developer<span>.</span> Web/Graphics Designer<span>.</span> Masked Vigilante<span>.<span>"
+    stopShowCaseBtn.style.display = 'none';
+  }
+
+  stopShowCaseBtn.addEventListener('click', stopShowCase);
+
+  portfolioDropdownBtn.addEventListener('click', () => {
+      portfolioDropdownBtn.classList.toggle('dripped');
+      portfolioDropdownBtn.classList.toggle('dropped');
+      portfolioDropdownLinks.classList.toggle('shown')
+  })
+
+  for(const link of tabLinks){
+    link.addEventListener('click', () => {
+        const tabName = link.getAttribute('tab');
+        document.querySelector('.active-tab').classList.remove('active-tab');
+        document.querySelector(`#${tabName}-tab`).classList.add('active-tab');
+        document.querySelector('.active-link').classList.remove('active-link');
+        document.querySelector(`#${tabName}-link`).classList.add('active-link');
+        if(link.classList.contains('port')){
+            portfolioDropdownBtn.classList.add('dropped');
+            portfolioDropdownLinks.classList.add('shown');
+        }
+    })
+  }
