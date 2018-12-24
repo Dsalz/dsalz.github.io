@@ -1,3 +1,4 @@
+  "use strict";
   const stuffIDoHeader = document.getElementById('stuffido');
   const stopShowCaseBtn = document.getElementById('stopShowcase');
 
@@ -6,7 +7,7 @@
 
   const tabLinks = document.getElementsByClassName('main-card-nav-link');
 
-  const stuffido = "=Web Developer.++++++=Web/Graphics Designer.++++++=Masked Vigilante.++++++"
+  const stuffido = "=Web Developer.++++++=Web/Graphics Designer.++++++=Masked Vigilante.++++++";
 
   const stuffidoarr = stuffido.split('');
 
@@ -23,7 +24,7 @@
 
     stuffindex = (stuffindex === stuffido.length-1)? 0: stuffindex + 1;
 
-  }
+  };
 
   const startShowCase = setInterval(appendStuffIDo, 200);
 
@@ -31,7 +32,7 @@
     clearInterval(startShowCase);
     stuffIDoHeader.innerHTML = "Web Developer<span>.</span> Web/Graphics Designer<span>.</span> Masked Vigilante<span>.<span>"
     stopShowCaseBtn.style.display = 'none';
-  }
+  };
 
   stopShowCaseBtn.addEventListener('click', stopShowCase);
 
@@ -39,7 +40,7 @@
       portfolioDropdownBtn.classList.toggle('dripped');
       portfolioDropdownBtn.classList.toggle('dropped');
       portfolioDropdownLinks.classList.toggle('shown')
-  })
+  });
 
   for(const link of tabLinks){
     link.addEventListener('click', () => {
@@ -53,4 +54,4 @@
             portfolioDropdownLinks.classList.add('shown');
         }
     })
-  }
+  };
