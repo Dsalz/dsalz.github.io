@@ -55,3 +55,23 @@
         }
     })
   };
+
+  fetch('https://geoip-db.com/json/')
+    .then(res => res.json())
+    .then(response => {
+      const fetchConfig = {
+        method: "POST",
+        body: JSON.stringify({
+          subject: 'Someone viewed your website',
+          data: `From Latitude: ${response.latitude}, Longitude: ${response.longitude} City: ${response.city}, State: ${response.state}, Country: ${response.country_name}`
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+      console.log(JSON.parse(fetchConfig.body).data);
+      fetch('https://yarn-s.herokuapp.com/api/v1/mail', fetchConfig)
+      .then((res) => console.log('doneo') || console.log(res))
+      .catch((err) =>  console.log('not donzo') || console.log(err))
+    })
+    .catch(err => false)
