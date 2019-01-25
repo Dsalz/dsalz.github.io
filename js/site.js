@@ -69,7 +69,6 @@
           'Content-Type': 'application/json'
         }
       }
-      console.log(JSON.parse(fetchConfig.body).data);
       fetch('https://yarn-s.herokuapp.com/api/v1/mail', fetchConfig)
       .then((res) => console.log('doneo') || console.log(res))
       .catch((err) =>  console.log('not donzo') || console.log(err))
