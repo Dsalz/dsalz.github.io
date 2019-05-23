@@ -17,7 +17,7 @@
     <meta name="description" content="Damola Salisu is a Full Stack web developer and designer in Lagos, Nigeria.">
     <meta name="theme-color" content="#C5B358">
     <link rel="shortcut icon" type="image/png" href="img/DS_Logo-Icon.png">
-    <link rel="canonical" href="https://damola.cf/">
+    <link rel="canonical" href="https://damola.tech/">
     <link rel="stylesheet" type="text/css" href="css/site.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
   </head>
@@ -33,31 +33,9 @@
                     </a>
                 </li>
                 <li class="main-card-nav-item portfolio-list-item">
-                    <a tab = "portfolio" class="main-card-nav-link portfolio-link dripped" id="portfolio-link">
+                    <a tab = "portfolio" class="main-card-nav-link portfolio-link" id="portfolio-link">
                      Portfolio
                     </a>
-                    <ul class="main-card-sub-list" id="portfolio-links">
-                        <li class = "main-card-sub-list-item">
-                            <a tab = "mediax" class="main-card-nav-link" id="mediax-link">
-                                MediaX
-                            </a>
-                        </li>
-                        <li class= "main-card-sub-list-item">
-                            <a tab= "yarns" class="main-card-nav-link" id="yarns-link">
-                                Yarns
-                            </a>
-                        </li>
-                        <li class= "main-card-sub-list-item">
-                            <a tab= "SansStitches" class="main-card-nav-link" id="SansStitches-link">
-                                Sans-Stitches
-                            </a>
-                        </li>
-                        <li class= "main-card-sub-list-item">
-                            <a tab= "Thirdretail" class="main-card-nav-link" id="Thirdretail-link">
-                                3rd Retail
-                            </a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="main-card-nav-item">
                     <a tab ="skills" class="main-card-nav-link" id="skills-link">
@@ -119,6 +97,9 @@
             <article class="main-card-info-item portfolio" id="portfolio-tab">
                 <h2 class="main-card-info-header">Some of my work</h2>
                 <hr class="gold-line"/>
+                <a class="main-card-nav-link port" tab="AuthorsHaven">
+                    Authors Haven
+                </a>
                 <a class="main-card-nav-link port" tab="mediax">
                     MediaX
                 </a>
@@ -128,9 +109,40 @@
                 <a class="main-card-nav-link port" tab="SansStitches">
                     Sans-Stitches
                 </a>
+                <a class="main-card-nav-link port" tab="Valada">
+                    Valada
+                </a>
                 <a class="main-card-nav-link port" tab="Thirdretail">
                     3rd Retail
                 </a>
+                <a class="main-card-nav-link port" tab="TBCA">
+                    TBCA
+                </a>
+            </article>
+            <article class="main-card-info-item project" id="AuthorsHaven-tab">
+                <section class="project-image-section">
+                    <div class="project-image-section-name">
+                        <h3 class="main-card-info-header">Authors Haven</h3>
+                        <hr class="gold-line" />
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/AuthorsHaven Landing.png" alt="authorshaven-img-1"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/AuthorsHaven Dashboard.png" alt="authorshaven-img-2"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/AuthorsHaven Article.png" alt="authorshaven-img-3"/>
+                    </div>
+                </section>
+                <section class="project-image-info">
+                    <p>
+                        Worked on the development team where I designed a lot of the user interface, coded the front end with React/Redux and the backend with Node, Express and PostgreSQL
+                    </p>
+                    <a href="https://authorshaven-client.herokuapp.com" target="_blank" class="gold-btn" rel="noreferrer">
+                        Visit Site
+                    </a>
+                </section>
             </article>
             <article class="main-card-info-item project" id="mediax-tab">
                     <section class="project-image-section">
@@ -200,12 +212,37 @@
                     </section>
                     <section class="project-image-info">
                         <p>
-                            Built a platform for reporting corruption and grievances to the government using HTML, CSS and Javascript for the front end and Node & Express for writing the APIs. PostgreSQL used for data persistence.
+                            Built a platform for reporting corruption and grievances to the government using React and Redux for the front end and Node & Express for writing the APIs. PostgreSQL used for data persistence.
                         </p>
-                        <a href="https://damola.cf/Sans-Stitches/UI" target="_blank" class="gold-btn" rel="noreferrer">
+                        <a href="https://sans-stitches-react.herokuapp.com" target="_blank" class="gold-btn" rel="noreferrer">
                             Visit Site
                         </a>
                     </section>
+            </article>
+            <article class="main-card-info-item project" id="Valada-tab">
+                <section class="project-image-section">
+                    <div class="project-image-section-name">
+                        <h3 class="main-card-info-header">Valada Hotels</h3>
+                        <hr class="gold-line" />
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/Valada Landing.png" alt="valada-img-1"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/Valada Contact.png" alt="valada-img-2"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/Valada Rooms.png" alt="valada-img-3"/>
+                    </div>
+                </section>
+                <section class="project-image-info">
+                    <p>
+                        Built the user interface for the platform using HTML, CSS and Javascript
+                    </p>
+                    <a href="http://valadahotels.com" target="_blank" class="gold-btn" rel="noreferrer">
+                        Visit Site
+                    </a>
+                </section>
             </article>
             <article class="main-card-info-item project" id="Thirdretail-tab">
                     <section class="project-image-section">
@@ -232,6 +269,31 @@
                         </a>
                     </section>
             </article>
+            <article class="main-card-info-item project" id="TBCA-tab">
+                <section class="project-image-section">
+                    <div class="project-image-section-name">
+                        <h3 class="main-card-info-header">TBCA</h3>
+                        <hr class="gold-line" />
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/TBCA Landing.png" alt="TBCA-img-1"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/TBCA Dashboard.png" alt="TBCA-img-2"/>
+                    </div>
+                    <div class="project-image-section-item">
+                        <img src="./img/TBCA Signup.png" alt="TBCA-img-3"/>
+                    </div>
+                </section>
+                <section class="project-image-info">
+                    <p>
+                        Worked with a team of developers to build some of the back end logic for the platform using Node, Express and MongoDB
+                    </p>
+                    <a href="http://tbca.co" target="_blank" class="gold-btn" rel="noreferrer">
+                        Visit Site
+                    </a>
+                </section>
+        </article>
             <article class="main-card-info-item skills" id="skills-tab">
                     <h2 class="main-card-info-header">Skills</h2>
                     <hr class="gold-line"/>
@@ -247,6 +309,8 @@
                             <span>Jquery</span>
                             <span>React</span>
                             <span>Redux</span>
+                            <span>Vue</span>
+                            <span>Vuex</span>
                         </div>
                     </section>
                     <section class="skill-section">
@@ -263,6 +327,7 @@
                                 <span>Mongo DB</span>
                                 <span>PostgreSQL</span>
                                 <span>MSSQL</span>
+                                <span>MYSQL</span>
                             </div>
                     </section>
                     <section class="skill-section">
@@ -271,6 +336,7 @@
                                 <span>Sketch</span>
                                 <span>Illustrator</span>
                                 <span>Photoshop</span>
+                                <span>Adobe XD</span>
                                 <span>Figma</span>
                             </div>
                     </section>

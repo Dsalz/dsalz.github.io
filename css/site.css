@@ -7,6 +7,9 @@
 body{
     font-family: 'Josie','Open Sans', sans-serif !important;
     background: #fff;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 a{
@@ -27,9 +30,28 @@ ul{
 
 .main-card{
     width: 90%;
+    min-height: 80vh;
+    animation: peekaboo .8s linear;
     margin: 30px auto;
     display: flex;
     box-shadow: 0 0.625rem 2.5rem 0 rgba(198,203,222,.45);
+}
+
+@keyframes peekaboo {
+    0%{
+        transform: scale(.01);
+        opacity: .1;
+    }
+
+    50%{
+        transform: scale(.5);
+        opacity: .5;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .main-card-nav{
@@ -76,22 +98,6 @@ ul{
 
 .portfolio-list-item{
     position: relative;
-}
-
-.dripped:after{
-    content:"\25BC";
-    position: absolute;
-    top:-2px;
-    right: -15px;
-    transform: scale(.4);
-}
-
-.dropped:after{
-    content:"\25B2";
-    position: absolute;
-    top:-5px;
-    right: -15px;
-    transform: scale(.4);
 }
 
 .active-link{
@@ -245,7 +251,7 @@ ul{
 
 .project-image-section-name, .project-image-section-item{
     width: calc(50% - 2.5px);
-    height: 210px;
+    height: 215px;
 }
 
 .project-image-section-name{
@@ -283,6 +289,9 @@ ul{
 .project-image-info p{
     font-size: 20px;
     line-height: 120%;
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center
 }
 
 .project-image-info a{

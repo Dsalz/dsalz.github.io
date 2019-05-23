@@ -3,7 +3,6 @@
   const stopShowCaseBtn = document.getElementById('stopShowcase');
 
   const portfolioDropdownBtn = document.getElementById('portfolio-link');
-  const portfolioDropdownLinks = document.getElementById('portfolio-links');
 
   const tabLinks = document.getElementsByClassName('main-card-nav-link');
 
@@ -39,7 +38,6 @@
   portfolioDropdownBtn.addEventListener('click', () => {
       portfolioDropdownBtn.classList.toggle('dripped');
       portfolioDropdownBtn.classList.toggle('dropped');
-      portfolioDropdownLinks.classList.toggle('shown')
   });
 
   for(const link of tabLinks){
@@ -47,11 +45,12 @@
         const tabName = link.getAttribute('tab');
         document.querySelector('.active-tab').classList.remove('active-tab');
         document.querySelector(`#${tabName}-tab`).classList.add('active-tab');
-        document.querySelector('.active-link').classList.remove('active-link');
-        document.querySelector(`#${tabName}-link`).classList.add('active-link');
+        if(!link.classList.contains('port')){
+          document.querySelector('.active-link').classList.remove('active-link');
+          document.querySelector(`#${tabName}-link`).classList.add('active-link');
+        }
         if(link.classList.contains('port')){
             portfolioDropdownBtn.classList.add('dropped');
-            portfolioDropdownLinks.classList.add('shown');
         }
     })
   };
