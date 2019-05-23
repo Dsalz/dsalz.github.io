@@ -29,7 +29,7 @@
 
   const stopShowCase = () => {
     clearInterval(startShowCase);
-    stuffIDoHeader.innerHTML = "Web Developer<span>.</span> Web/Graphics Designer<span>.</span> Masked Vigilante<span>.<span>"
+    stuffIDoHeader.innerHTML = "Web Developer<span>.</span> Web/Graphics Designer<span>.</span> Masked Vigilante<span>.<span>";
     stopShowCaseBtn.style.display = 'none';
   };
 
