@@ -30,7 +30,7 @@ ul {
 
 .main-card {
   width: 90%;
-  min-height: 85vh;
+  min-height: 90vh;
   animation: peekaboo 0.8s linear;
   margin: 30px auto;
   display: flex;
@@ -167,7 +167,6 @@ ul {
   background: #313638;
   color: #ffffff;
   max-height: 90vh;
-  overflow-y: auto;
 }
 
 .main-card-info-item {
@@ -219,7 +218,7 @@ ul {
 .about p {
   text-align: left;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .main-card-info-header {
@@ -238,12 +237,13 @@ ul {
 .portfolio a {
   display: block;
   width: fit-content;
-  margin: 40px auto;
+  margin: 30px auto 10px;
   color: #c5b358 !important;
   font-size: 20px;
 }
 
-.portfolio a:hover {
+.portfolio a:hover,
+.project-image-info a.portfolio-project-return-link:hover {
   text-decoration: underline;
 }
 
@@ -257,6 +257,7 @@ ul {
 .project-image-section-name,
 .project-image-section-item {
   width: calc(50% - 2.5px);
+  max-height: 300px;
 }
 
 .project-image-section-name {
@@ -299,8 +300,18 @@ ul {
 .project-image-info a {
   color: #313638;
   position: absolute;
-  bottom: 10px;
+}
+
+.project-image-info a.gold-btn {
   right: 15px;
+  bottom: 10px;
+}
+
+.project-image-info a.portfolio-project-return-link{
+    left: 15px;
+    color: #c5b358;
+    font-size: 20px;
+    bottom: 25px;
 }
 
 .skills {
@@ -405,13 +416,11 @@ ul {
 
 @media screen and (max-width: 780px) {
   .main-card-info{
-    max-height: 200vh;
+    max-height: 5000vh;
+    height: auto;
   }
   .main-card {
     flex-direction: column;
-  }
-  .main-card-nav {
-    width: 100%;
   }
   .main-card-nav img {
     order: 1;
@@ -427,7 +436,12 @@ ul {
     margin: 10px 20px;
   }
 
-  .main-card-sub-list-item {
+  .main-card-sub-list-item,
+  .main-card-nav,
+  .main-card-info,
+  .project-image-section-name,
+  .project-image-section-item,
+  .contact-card {
     width: 100%;
   }
 
@@ -447,10 +461,6 @@ ul {
     margin-top: 10px;
   }
 
-  .main-card-info {
-    width: 100%;
-  }
-
   .dropped {
     margin-bottom: 170px;
   }
@@ -465,7 +475,7 @@ ul {
 
   .project-image-section-name,
   .project-image-section-item {
-    width: 100%;
+    max-height: 400px;
   }
 
   .project-image-section-name {
@@ -499,8 +509,8 @@ ul {
     font-size: 18px;
   }
 
-  .contact-card {
-    width: 100%;
+  .project-image-info a.portfolio-project-return-link {
+    font-size: 16px;
   }
 }
 
@@ -511,5 +521,10 @@ ul {
     width: fit-content;
     margin: 10px 6px;
     font-size: 15px;
+  }
+  .skill-section h3{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
   }
 }
