@@ -167,6 +167,7 @@ ul {
   background: #313638;
   color: #ffffff;
   max-height: 90vh;
+  overflow-y: auto;
 }
 
 .main-card-info-item {
@@ -177,6 +178,7 @@ ul {
 .active-tab {
   display: block;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .about {
@@ -247,6 +249,9 @@ ul {
   text-decoration: underline;
 }
 
+.portfolio a:last-of-type {
+  margin-bottom: 40px;
+}
 .project-image-section {
   display: flex;
   flex-wrap: wrap;
@@ -299,19 +304,19 @@ ul {
 
 .project-image-info a {
   color: #313638;
-  position: absolute;
 }
 
 .project-image-info a.gold-btn {
   right: 15px;
   bottom: 10px;
+  float: right;
 }
 
 .project-image-info a.portfolio-project-return-link{
-    left: 15px;
     color: #c5b358;
     font-size: 20px;
-    bottom: 25px;
+    position: relative;
+    bottom: -15px;
 }
 
 .skills {
@@ -418,6 +423,7 @@ ul {
   .main-card-info{
     max-height: 5000vh;
     height: auto;
+    overflow-y: initial;
   }
   .main-card {
     flex-direction: column;
