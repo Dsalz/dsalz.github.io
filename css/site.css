@@ -166,8 +166,13 @@ ul {
   width: 80%;
   background: #313638;
   color: #ffffff;
+}
+
+.main-card-info ,
+.main-card-nav
+{
   max-height: 90vh;
-  overflow-y: auto;
+    overflow-y: auto;
 }
 
 .main-card-info-item {
@@ -423,8 +428,13 @@ ul {
   .main-card-info{
     max-height: 5000vh;
     height: auto;
-    overflow-y: initial;
   }
+  .main-card-nav,
+  .main-card-info{
+    overflow-y: initial;
+
+  }
+
   .main-card {
     flex-direction: column;
   }
