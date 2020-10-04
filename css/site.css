@@ -405,6 +405,7 @@ ul {
 .site-disclaimer {
   position: fixed;
   bottom: -10px;
+  z-index: -1;
   left: 0;
   color: #313638;
   text-align: center;
@@ -434,6 +435,9 @@ ul {
 }
 
 @media screen and (max-width: 780px) {
+  .site-disclaimer{
+    bottom: -15px;
+  }
   .main-card-info{
     max-height: 5000vh;
     height: auto;
