@@ -402,6 +402,15 @@ ul {
   color: #313638;
 }
 
+.site-disclaimer {
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+  color: #313638;
+  text-align: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 1137px) {
   .gold-btn {
     font-size: 16px;
