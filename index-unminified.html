@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-131790087-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-131790087-1");
-    </script>
     <meta charset="UTF-8" />
     <title>Adedamola Salisu's Portfolio Page!</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -31,7 +18,7 @@
     <link rel="canonical" href="https://damola.dev/" />
     <link rel="stylesheet" type="text/css" href="css/site.min.css" />
     <link
-      rel="stylesheet"
+      rel="stylesheet preconnect"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -130,24 +117,26 @@
             new ones for developers trying to maintain my code.
           </p>
           <p>
-            So here i am, a handsome fella out to change the world one web app
-            or website at a time.
-          </p>
-          <p>
             Please feel free to email me feedback on this website. It could be anything you think could be done better, stuff you just think would be cool if added or even just to let me know you liked it 😊
           </p>
         </article>
         <article class="main-card-info-item portfolio" id="portfolio-tab">
           <h1 class="main-card-info-header">Some of my work</h1>
           <hr class="gold-line" />
+          <a class="main-card-nav-link port" tab="portodigital">
+            PortoDigital
+          </a>
+          <a class="main-card-nav-link port" tab="tvmucho">
+            Tv Mucho
+          </a>
           <a class="main-card-nav-link port" tab="bloks">
             Bloks
           </a>
           <a class="main-card-nav-link port" tab="wsb">
             WeSupportBusiness
           </a>
-          <a class="main-card-nav-link port" tab="eoslocally">
-            EOS Locally
+          <a class="main-card-nav-link port" tab="cryptolocally">
+            CryptoLocally
           </a>
           <a class="main-card-nav-link port" tab="blushup">
             Blushup
@@ -179,6 +168,82 @@
           <a class="main-card-nav-link port" tab="mediax">
             MediaX
           </a>
+        </article>
+        <article class="main-card-info-item project" id="portodigital-tab">
+          <section class="project-image-section">
+            <div class="project-image-section-name">
+              <div>
+              <h3 class="main-card-info-header">PortoDigital</h3>
+              <hr class="gold-line" />
+              </div>
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/portodigital-img-1.png" alt="portodigital-img-1" />
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/portodigital-img-2.png" alt="portodigital-img-2" />
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/portodigital-img-3.png" alt="portodigital-img-3" />
+            </div>
+          </section>
+          <section class="project-image-info">
+            <p>
+              This is a platform for guiding tourists around the city of Porto. I worked on the frontend of this platform using React and Graphql
+            </p>
+            <a
+              tab="portfolio"
+              class="main-card-nav-link portfolio-project-return-link"
+            >
+              <- Back to portfolio
+            </a>
+            <a
+              href="https://mmt.portodigital.pt/"
+              target="_blank"
+              class="gold-btn"
+              rel="noreferrer"
+            >
+              Visit Site
+            </a>
+          </section>
+        </article>
+        <article class="main-card-info-item project" id="tvmucho-tab">
+          <section class="project-image-section">
+            <div class="project-image-section-name">
+              <div>
+              <h3 class="main-card-info-header">Tv Mucho</h3>
+              <hr class="gold-line" />
+              </div>
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/tvmucho-img-1.png" alt="tvmucho-img-1" />
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/tvmucho-img-2.png" alt="tvmucho-img-2" />
+            </div>
+            <div class="project-image-section-item">
+              <img src="./img/tvmucho-img-3.png" alt="tvmucho-img-3" />
+            </div>
+          </section>
+          <section class="project-image-info">
+            <p>
+              This is a platform bringing Free-To-Air local TV to expats. I worked on the frontend team of the platform where we used Vue and Vuex.
+            </p>
+            <a
+              tab="portfolio"
+              class="main-card-nav-link portfolio-project-return-link"
+            >
+              <- Back to portfolio
+            </a>
+            <a
+              href="https://sat.tvmucho.com/"
+              target="_blank"
+              class="gold-btn"
+              rel="noreferrer"
+            >
+              Visit Site
+            </a>
+          </section>
         </article>
         <article class="main-card-info-item project" id="bloks-tab">
           <section class="project-image-section">
@@ -268,7 +333,7 @@
           </section>
           <section class="project-image-info">
             <p>
-              Built out the frontend for the entire platform
+              Built out the frontend for this platform that aims to help users book makeup appointments online 
               using React and used Redux for state management
             </p>
 
@@ -284,11 +349,11 @@
             </a>
           </section>
         </article>
-        <article class="main-card-info-item project" id="eoslocally-tab">
+        <article class="main-card-info-item project" id="cryptolocally-tab">
           <section class="project-image-section">
             <div class="project-image-section-name">
               <div>
-              <h3 class="main-card-info-header">EOS Locally</h3>
+              <h3 class="main-card-info-header">CryptoLocally</h3>
               <hr class="gold-line" />
               </div>
             </div>
@@ -304,14 +369,14 @@
           </section>
           <section class="project-image-info">
             <p>
-              Worked on the frontend of this platform using Vue
+              Worked on the frontend of this crypto P2P trading platform using Vue
               and used Prismic as the blog engine
             </p>
 
             <a tab="portfolio" class="main-card-nav-link portfolio-project-return-link">
               <- Back to portfolio </a>
             <a
-              href="http://eoslocally.com"
+              href="https://cryptolocally.com/"
               target="_blank"
               class="gold-btn"
               rel="noreferrer"
@@ -367,8 +432,10 @@
         <article class="main-card-info-item project" id="AuthorsHaven-tab">
           <section class="project-image-section">
             <div class="project-image-section-name">
-              <h3 class="main-card-info-header">Authors Haven</h3>
-              <hr class="gold-line" />
+              <div>
+                <h3 class="main-card-info-header">Authors Haven</h3>
+                <hr class="gold-line" />
+              </div>
             </div>
             <div class="project-image-section-item">
               <img
@@ -749,16 +816,16 @@
         <article class="main-card-info-item contact" id="contact-tab">
           <h1 class="main-card-info-header">Contact</h1>
           <hr class="gold-line" />
-          <p>Want to work with me?</p>
+          <p>Want to contact me?</p>
           <p>Lets have a chat</p>
-          <div class="contact-card">
+          <a class="contact-card" href="mailto:salisu.damola@yahoo.com">
             <i class="fa fa-2x fa-envelope"></i>
             <p>salisu.damola@yahoo.com</p>
-          </div>
-          <div class="contact-card">
+          </a>
+          <a class="contact-card" href="tel:+2348146292275">
             <i class="fa fa-2x fa-phone"></i>
             <p>+2348146292275</p>
-          </div>
+          </a>
         </article>
       </section>
       <p class="site-disclaimer">This site is owned and operated by Adedamola Salisu</p>
